@@ -11,7 +11,7 @@ export function Hero() {
         <Reveal>
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full ring-1 ring-white/10 bg-white/[0.04] text-[12.5px] text-ink-dim mb-7">
             <span className="w-1.5 h-1.5 rounded-full bg-cyan animate-pulse" />
-            L'ingénieur logiciel IA, du prompt au déploiement
+            L&apos;ingénieur logiciel IA, du prompt au déploiement
           </div>
         </Reveal>
 
