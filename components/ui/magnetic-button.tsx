@@ -27,7 +27,6 @@ export function MagneticButton({
       : "text-ink bg-white/[0.04] hover:bg-white/[0.08] ring-1 ring-white/10";
 
   return (
-    // @ts-expect-error - polymorphic element
     <Component
       ref={ref}
       onMouseMove={onMove}
