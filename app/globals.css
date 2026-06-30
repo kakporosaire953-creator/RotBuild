@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-inter-tight: "Inter Tight", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --font-jetbrains-mono: "JetBrains Mono", monospace;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #06070d;
+  color: #e7e9f2;
+}
+
+::selection {
+  background: rgba(124, 92, 255, 0.3);
+}
+
+/* Visible keyboard focus everywhere */
+:focus-visible {
+  outline: 2px solid #22d3ee;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.aurora-blob {
+  position: absolute;
+  width: 480px;
+  height: 480px;
+  border-radius: 9999px;
+  filter: blur(110px);
+  opacity: 0.28;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #7c5cff 0%, #3b82f6 50%, #22d3ee 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
